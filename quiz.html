@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="imgs/home.ico">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div class="upper">
+            <div class="navigation_bar">
+                <a href="index.html">Home Page</a>
+                <a href="teams_players.html">Teams/Players</a>
+                <a href="history.html">History</a>
+                <a href="rules.html">Rules</a>
+                <a href="contact.html">Contact</a>
+                <a class="active" href="quiz.html">Quiz</a>
+            </div>
+        </div>
+        <div>
+            <button class="theme_position" onclick="theme()"><img class="theme_img" id="mode" src="imgs/light.png"></button>
+        </div>
+        <div class="quiz">
+            <div class="top_q">
+                <h1>Quiz της ιστοσελιδας</h1>
+                <p class="description_q">
+                    Το μπάσκετ είναι ένα από τα πιο δημοφιλή αθλήματα στον κόσμο. Σε αυτό το Quiz, θα δοκιμάσετε τις γνώσεις σας σχετικά με βασικούς 
+                    και προχωρημένους κανόνες, διαστάσεις και κανονισμούς του παιχνιδιού. Καλή επιτυχία!
+                </p>
+                <div class="name">
+                        <form id="form" onsubmit="return false;">
+                        <input class="user" type="text" id="userInput" placeholder="Όνομα Χρήστη">
+                        <input class="submit" type="submit" value="Υποβολή" onclick="saveName()">
+                    </form>
+                </div>
+            </div>
+            <div class="qu1">
+                <h1>Πόσοι παίκτες από κάθε ομάδα βρίσκονται στο γήπεδο κατά τη διάρκεια του αγώνα;</h1>
+                <button>a) 4</button>
+                <button onclick="qu1()">b) 5</button>
+                <button>c) 6</button>
+            </div>
+            <div class="qu2">
+                <h1>Πόσοι πόντοι κερδίζονται όταν η μπάλα μπει στο καλάθι από τη γραμμή των τριών πόντων;</h1>
+                <button>a) 2</button>
+                <button onclick="qu2()">b) 3</button>
+                <button>c) 4</button>
+            </div>
+            <div class="qu3">
+                <h1>Πόσα δεκάλεπτα έχει ένας τυπικός αγώνας μπάσκετ;</h1>
+                <button>a) 2</button>
+                <button>b) 3</button>
+                <button onclick="qu3()">c) 4</button>
+            </div>
+            <div class="qu4">
+                <h1>Ποιος είναι ο στόχος της κάθε ομάδας σε έναν αγώνα μπάσκετ;</h1>
+                <button onclick="qu4()">a) Να βάλει περισσότερους πόντους από την αντίπαλη ομάδα</button>
+                <button>b) Να κρατήσει την μπάλα όσο περισσότερο μπορεί</button>
+                <button>c) Να κερδίσει όλες τις ελεύθερες βολές</button>
+            </div>
+            <div class="qu5">
+                <h1>Ποια είναι η μέγιστη διάρκεια για κάθε επίθεση (shot clock) σε έναν αγώνα μπάσκετ;</h1>
+                <button onclick="qu5()">a) 24 δευτερόλεπτα</button>
+                <button>b) 30 δευτερόλεπτα</button>
+                <button>c) 20 δευτερόλεπτα</button>
+            </div>
+            <div class="qu6">
+                <h1>Ποιος από τους παρακάτω όρους περιγράφει το "να δώσεις την μπάλα σε συμπαίκτη σου"</h1>
+                <button>a) Κάρφωμα</button>
+                <button onclick="qu6()">b) Πάσα</button>
+                <button>c) Άμυνα</button>
+            </div>
+            <div class="final">
+                <button onclick="reveal()">Τέλειωσα</button>
+                <h1 id="result"></h1>
+            </div>
+        </div>        
+        <div class="footer">
+            <div class="footer_title">
+                <img class="nba_footer" src="imgs/nba.png">
+                <img class="euroleague_footer" src="imgs/euroleague.png">
+                <h1>Basketball Teams Network</h1>
+            </div>
+            <div class="footer_description">
+                <h3>Project For Athens University of Economics and Business </h3>
+                <p>Copyright © 2025</p>
+            </div>
+        </div>
+    </body>
+</html>
